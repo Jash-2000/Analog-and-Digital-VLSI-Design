@@ -1,0 +1,26 @@
+USER SYMBOL by DSCH 2.5f
+DATE 22/07/02 23:41:50
+SYM  #halfAdder
+BB(0,0,40,30)
+TITLE 10 10  #halfAdder
+MODEL 6000
+REC(5,5,30,20)
+PIN(0,20,0.00,0.00)B
+PIN(0,10,0.00,0.00)A
+PIN(40,10,2.00,1.00)Carry
+PIN(40,20,2.00,1.00)Sum
+LIG(0,20,5,20)
+LIG(0,10,5,10)
+LIG(35,10,40,10)
+LIG(35,20,40,20)
+LIG(5,5,5,25)
+LIG(5,5,35,5)
+LIG(35,5,35,25)
+LIG(35,25,5,25)
+VLG module halfAdder( B,A,Carry,Sum);
+VLG  input B,A;
+VLG  output Carry,Sum;
+VLG  xor #(12) xor2(Sum,A,B);
+VLG  and #(16) and2(Carry,B,A);
+VLG endmodule
+FSYM

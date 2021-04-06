@@ -1,0 +1,19 @@
+// DSCH 2.6i
+// 4/8/2003 10:19:09 AM
+// C:\Documents and Settings\Administrator\My Documents\Dsch2\Book on CMOS\halfAdder.sch
+
+module halfAdder( B,A,Carry,Sum);
+ input B,A;
+ output Carry,Sum;
+ and #(16) and2(Carry,B,A);
+ xor #(16) xor2(Sum,A,B);
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 B=~B;
+#2000 A=~A;
+
+// Simulation parameters
+// B CLK 10 10
+// A CLK 20 20

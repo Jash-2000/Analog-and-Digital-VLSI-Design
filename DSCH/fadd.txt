@@ -1,0 +1,25 @@
+// DSCH 2.7a
+// 9/7/2003 6:07:02 PM
+// C:\Documents and Settings\Administrator\My Documents\Dsch2\Book on CMOS\fadd.sch
+
+module fadd( C,B,A,Carry,Sum);
+ input C,B,A;
+ output Carry,Sum;
+ xor #(16) ^(w4,A,B);
+ nand #(16) &(w5,A,C);
+ nand #(16) &(w7,B,A);
+ xor #(16) ^(Sum,w4,C);
+ nand #(16) &(Carry,w7,w9,w5);
+ nand #(16) &(w9,B,C);
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 C=~C;
+#2000 B=~B;
+#4000 A=~A;
+
+// Simulation parameters
+// C CLK 10 10
+// B CLK 20 20
+// A CLK 40 40

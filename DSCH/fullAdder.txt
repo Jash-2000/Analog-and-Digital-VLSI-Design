@@ -1,0 +1,22 @@
+// DSCH 2.6i
+// 4/14/2003 9:23:55 AM
+// C:\Documents and Settings\Administrator\My Documents\Dsch2\Book on CMOS\fullAdder.sch
+
+module fullAdder( C,B,A,Carry,Sum);
+ input C,B,A;
+ output Carry,Sum;
+ xor #(16) xor2(w4,A,B);
+ assign   Carry=(A&B)|(C&(A|B))
+ xor #(16) xor2(Sum,w4,C);
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 C=~C;
+#2000 B=~B;
+#4000 A=~A;
+
+// Simulation parameters
+// C CLK 10 10
+// B CLK 20 20
+// A CLK 40 40

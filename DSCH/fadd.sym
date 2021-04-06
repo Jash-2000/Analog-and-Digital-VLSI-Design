@@ -1,0 +1,33 @@
+USER SYMBOL by DSCH 2.0c
+DATE 27/10/99 22:54:27
+SYM  #fadd.sym
+BB(0,0,40,40)
+TITLE 10 10  #fadd
+MODEL 6000
+REC(10,0,20,40)
+PIN(0,30,0.000,0)C
+PIN(0,20,0.000,0)B
+PIN(0,10,0.000,0)A
+PIN(40,20,0.060,0)Sum
+PIN(40,10,0.060,0)Carry
+LIG(0,30,10,30)
+LIG(0,20,10,20)
+LIG(0,10,10,10)
+LIG(30,20,40,20)
+LIG(30,10,40,10)
+LIG(10,0,10,40)
+LIG(10,0,30,0)
+LIG(30,0,30,40)
+LIG(30,40,10,40)
+VLG module fadd( C,B,A,Sum,Carry);
+VLG  input C,B,A;
+VLG  output Sum,Carry;
+VLG  wire w1,w2,w3,w4;
+VLG   xor xor21(Sum,w1,C);
+VLG   xor xor22(w1,A,B);
+VLG  nand nand21(w4,B,A);
+VLG  nand nand22(w3,B,C);
+VLG  nand nand23(w2,A,C);
+VLG  nand nand31(Carry,w4,w3,w2);
+VLG endmodule
+FSYM
