@@ -1,0 +1,93 @@
+VERSION 06/01/03 20:40:13
+FIG #C:\microwind2\Book on CMOS\AmpliDiff2.MSK
+BB(-16,1,39,71)
+SIMU #10.00
+REC(-15,21,54,32,NW)
+REC(27,7,6,6,DP)
+REC(15,33,5,8,DP)
+REC(15,27,8,6,DP)
+REC(5,27,8,14,DP)
+REC(-2,33,5,8,DP)
+REC(-4,27,7,6,DP)
+REC(-14,7,6,6,DP)
+REC(15,7,7,6,DN)
+REC(5,7,8,6,DN)
+REC(-4,7,7,6,DN)
+REC(-14,27,6,6,DN)
+REC(18,9,2,2,CO)
+REC(18,29,2,2,CO)
+REC(-2,9,2,2,CO)
+REC(8,29,2,2,CO)
+REC(-12,29,2,2,CO)
+REC(9,45,2,2,CO)
+REC(-12,9,2,2,CO)
+REC(-12,9,2,2,CO)
+REC(8,9,2,2,CO)
+REC(29,9,2,2,CO)
+REC(29,9,2,2,CO)
+REC(-2,29,2,2,CO)
+REC(15,17,2,2,CO)
+REC(13,25,2,18,PO)
+REC(3,43,12,3,PO)
+REC(13,15,6,6,PO)
+REC(7,46,6,3,PO)
+REC(3,25,2,18,PO)
+REC(13,5,2,10,PO)
+REC(3,5,2,10,PO)
+REC(-15,1,20,4,PO)
+REC(13,15,4,6,ME)
+REC(16,27,6,6,ME)
+REC(-14,27,6,6,ME)
+REC(6,27,6,6,ME)
+REC(-3,43,10,4,ME)
+REC(21,17,14,4,ME)
+REC(-14,7,6,6,ME)
+REC(-4,7,6,6,ME)
+REC(-4,27,6,6,ME)
+REC(6,7,6,6,ME)
+REC(7,43,6,6,ME)
+REC(16,7,6,6,ME)
+REC(17,13,4,14,ME)
+REC(27,7,6,6,ME)
+REC(-3,33,4,10,ME)
+REC(-3,13,4,14,ME)
+REC(8,9,2,2,VI)
+REC(29,9,2,2,VI)
+REC(-12,29,2,2,VI)
+REC(8,29,2,2,VI)
+REC(-12,9,2,2,VI)
+REC(6,27,6,6,M2)
+REC(-14,27,6,6,M2)
+REC(-14,7,6,6,M2)
+REC(27,7,6,6,M2)
+REC(6,7,6,6,M2)
+REC(8,29,2,2,V2)
+REC(-12,29,2,2,V2)
+REC(-12,9,2,2,V2)
+REC(29,9,2,2,V2)
+REC(8,9,2,2,V2)
+REC(-15,6,53,8,M3)
+REC(-16,26,55,8,M3)
+REC(13,27,2,14,DP)
+REC(3,27,2,14,DP)
+REC(13,7,2,6,DN)
+REC(3,7,2,6,DN)
+TITLE 32 10  #Vss
+$0 1000 0 
+TITLE -13 3  #V+
+$c 1000 0   0.50   5.50   6.00  11.00 
+TITLE -7 29  #Vdd
+$1 1000 0 
+TITLE 35 70  #BSIM4 (This label forced BSIM4 simulation)
+$- 1000 0 
+TITLE 32 19  #Vout
+$v 1000 0 
+TITLE -14 66  #Used as a follower to shown the input range
+$- 1000 0 
+TITLE 6 49  #pMOS current mirror
+$- 1000 0 
+TITLE -14 71  #Differential Amplifier
+$- 1000 0 
+TITLE 16 4  #Vout connected to V-
+$- 1000 0 
+FFIG C:\microwind2\Book on CMOS\AmpliDiff2.MSK

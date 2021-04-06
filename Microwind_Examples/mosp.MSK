@@ -1,0 +1,31 @@
+VERSION 3/23/2003 4:32:54 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\mosp.MSK
+BB(13,8,41,32)
+SIMU #5.00
+REC(13,8,28,22,NW)
+REC(26,14,5,10,DP)
+REC(19,14,5,10,DP)
+REC(35,14,4,4,DN)
+REC(36,15,2,2,CO)
+REC(20,15,2,2,CO)
+REC(28,21,2,2,CO)
+REC(28,15,2,2,CO)
+REC(20,21,2,2,CO)
+REC(20,29,2,2,CO)
+REC(19,28,7,2,PO)
+REC(24,11,2,17,PO)
+REC(19,30,4,2,PO)
+REC(27,14,4,14,ME)
+REC(19,10,4,14,ME)
+REC(19,28,4,4,ME)
+REC(35,14,4,4,ME)
+REC(24,14,2,10,DP)
+TITLE 37 18  #Vdd
+$1 1000 0 
+TITLE 21 12  #Vdrain
+$c 1000 0   0.23   0.25   0.48   0.50 
+TITLE 22 32  #VGate
+$c 1000 0   0.48   0.50   0.98   1.00 
+TITLE 29 27  #Vout
+$v 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\mosp.MSK

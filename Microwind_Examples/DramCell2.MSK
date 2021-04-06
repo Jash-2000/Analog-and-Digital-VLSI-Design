@@ -1,0 +1,25 @@
+VERSION 3/17/2003 10:19:10 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\DramCell2.MSK
+BB(60,-28,70,2)
+SIMU #20.00
+REC(62,-26,6,6,OP,8)
+REC(62,-6,6,6,OP,8)
+REC(62,-7,6,7,DN)
+REC(62,-16,6,6,DN)
+REC(62,-26,6,7,DN)
+REC(62,-10,6,3,DN)
+REC(62,-19,6,3,DN)
+REC(64,-14,2,2,CO)
+REC(64,-14,2,2,CO)
+REC(64,-14,2,2,CO)
+REC(64,-4,2,2,CO)
+REC(64,-14,2,2,CO)
+REC(64,-24,2,2,CO)
+REC(60,-19,10,3,PO)
+REC(60,-10,10,3,PO)
+REC(63,-15,4,4,ME)
+REC(60,-25,10,4,ME)
+REC(60,-5,10,4,ME)
+REC(64,-14,2,2,VI)
+REC(63,-28,4,30,M2)
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\DramCell2.MSK

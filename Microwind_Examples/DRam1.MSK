@@ -1,0 +1,30 @@
+VERSION 09/01/01 15:46:43
+FIG #C:\microwind2\Manual mw2\DRam1.MSK
+BB(-6,1,60,40)
+SIMU #20.00
+REC(7,19,8,6,DN)
+REC(6,13,9,6,DN)
+REC(-3,13,7,6,DN)
+REC(-1,15,2,2,CO)
+REC(4,6,2,2,CO)
+REC(2,4,6,6,PO)
+REC(4,10,2,11,PO)
+REC(2,9,6,1,ME)
+REC(-6,4,19,5,ME)
+REC(-3,13,6,6,ME)
+REC(-1,15,2,2,VI)
+REC(-3,19,5,6,M2)
+REC(-3,1,5,12,M2)
+REC(-3,13,6,6,M2)
+REC(4,13,2,6,DN)
+TITLE 10 6  #Select
+$- 1000 0 
+TITLE 0 23  #Data
+$c 1000 0   2.00   3.00   5.00   6.00 
+TITLE 2 30  #Dynamic RAM
+$- 1000 0 
+TITLE 20 20  #Parasitic junction capacitance
+$- 1000 0 
+TITLE 20 16  #used to store 1 or 0
+$- 1000 0 
+FFIG C:\microwind2\Manual mw2\DRam1.MSK

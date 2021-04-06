@@ -1,0 +1,67 @@
+VERSION 5/13/2003 2:56:34 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\inv.MSK
+BB(-2,-10,32,58)
+SIMU #2.00
+REC(-2,24,34,30,NW)
+REC(13,34,4,8,DP)
+REC(13,30,5,4,DP)
+REC(7,30,4,8,DP)
+REC(6,38,5,4,DP)
+REC(5,-2,4,4,DP)
+REC(13,14,5,4,DN)
+REC(6,14,5,4,DN)
+REC(5,46,4,4,DN)
+REC(6,-1,2,2,CO)
+REC(7,39,2,2,CO)
+REC(6,47,2,2,CO)
+REC(7,15,2,2,CO)
+REC(9,-9,2,2,CO)
+REC(9,55,2,2,CO)
+REC(15,31,2,2,CO)
+REC(15,15,2,2,CO)
+REC(11,11,2,10,PO)
+REC(8,-10,2,4,PO)
+REC(10,56,2,2,PO)
+REC(10,-8,3,19,PO)
+REC(10,45,3,11,PO)
+REC(10,-10,2,2,PO)
+REC(8,54,2,4,PO)
+REC(10,21,3,6,PO)
+REC(11,27,2,18,PO)
+REC(8,54,4,4,ME)
+REC(4,-2,24,4,ME)
+REC(16,-10,4,4,ME)
+REC(14,14,4,20,ME)
+REC(16,54,4,4,ME)
+REC(6,38,4,8,ME)
+REC(18,22,2,4,ME)
+REC(6,2,4,16,ME)
+REC(4,46,24,4,ME)
+REC(8,-10,4,4,ME)
+REC(9,47,2,2,VI)
+REC(9,-9,2,2,VI)
+REC(9,-1,2,2,VI)
+REC(9,55,2,2,VI)
+REC(17,23,2,2,VI)
+REC(17,55,2,2,VI)
+REC(17,-9,2,2,VI)
+REC(8,-2,4,4,M2)
+REC(16,-10,4,68,M2)
+REC(8,54,4,4,M2)
+REC(8,-10,4,4,M2)
+REC(8,46,4,4,M2)
+REC(9,47,2,2,V2)
+REC(9,-1,2,2,V2)
+REC(4,45,24,5,M3)
+REC(4,-2,24,5,M3)
+REC(11,30,2,12,DP)
+REC(11,14,2,4,DN)
+TITLE 9 0  #vss
+$0 1000 0 
+TITLE 15 48  #vdd
+$1 1000 0 
+TITLE 19 56  #inv
+$v 1000 0 
+TITLE 12 21  #in
+$c 1000 0   0.23   0.25   0.48   0.50 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\inv.MSK

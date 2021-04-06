@@ -1,0 +1,47 @@
+CIRCUIT C:\Documents and Settings\Administrator\My Documents\microwind3\microwind3 lite\Inverter.MSK
+*
+* IC Technology: CMOS 0.12µm - 6 Metal
+*
+VDD 1 0 DC 1.20
+VA 6 0 DC 0 PULSE(0.00 1.20 0.95N 0.05N 0.05N 0.95N 2.00N)
+*
+* List of nodes
+* "N2" corresponds to n°2
+* " inv1_nA" corresponds to n°3
+* "A" corresponds to n°6
+*
+* MOS devices
+MN1 0 6 3 0 N1  W= 0.36U L= 0.12U
+MP1 1 6 3 2 P1  W= 0.96U L= 0.12U
+*
+C2 2 0  1.197fF
+C3 3 0  1.548fF
+C4 1 0  0.579fF
+C6 6 0  1.159fF
+*
+* n-MOS Model 3 :
+* low leakage
+.MODEL N1 NMOS LEVEL=3 VTO=0.40 UO=600.000 TOX= 2.0E-9
++LD =0.000U THETA=0.500 GAMMA=0.400
++PHI=0.200 KAPPA=0.060 VMAX=120.00K
++CGSO=100.0p CGDO=100.0p
++CGBO= 60.0p CJSW=240.0p
+*
+* p-MOS Model 3:
+* low leakage
+.MODEL P1 PMOS LEVEL=3 VTO=-0.45 UO=200.000 TOX= 2.0E-9
++LD =0.000U THETA=0.300 GAMMA=0.400
++PHI=0.200 KAPPA=0.060 VMAX=110.00K
++CGSO=100.0p CGDO=100.0p
++CGBO= 60.0p CJSW=240.0p
+*
+* Transient analysis
+*
+* (Winspice)
+.options temp=27.0
+.control
+tran 0.1N 5.00N
+print  V(6) V(3) > out.txt
+plot  V(6) V(3)
+.endc
+.END

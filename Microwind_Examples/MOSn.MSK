@@ -1,0 +1,25 @@
+VERSION 3/23/2003 3:39:02 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\MOSn.MSK
+BB(15,9,27,31)
+SIMU #10.00
+REC(22,13,5,10,DN)
+REC(15,13,5,10,DN)
+REC(24,20,2,2,CO)
+REC(16,14,2,2,CO)
+REC(16,20,2,2,CO)
+REC(24,14,2,2,CO)
+REC(16,28,2,2,CO)
+REC(15,29,4,2,PO)
+REC(20,10,2,17,PO)
+REC(15,27,7,2,PO)
+REC(23,13,4,14,ME)
+REC(15,9,4,14,ME)
+REC(15,27,4,4,ME)
+REC(20,13,2,10,DN)
+TITLE 25 26  #s1
+$v 1000 0 
+TITLE 17 29  #Vgate
+$c 1000 0   0.48   0.50   0.98   1.00 
+TITLE 16 10  #Vdrain
+$c 1000 0   0.23   0.25   0.48   0.50 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\MOSn.MSK

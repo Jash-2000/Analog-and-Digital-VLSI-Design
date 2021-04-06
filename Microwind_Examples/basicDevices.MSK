@@ -1,0 +1,63 @@
+VERSION 3/23/2003 1:20:35 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\basicDevices.MSK
+BB(-4,-29,42,30)
+SIMU #10.00
+REC(16,-24,26,22,NW)
+REC(16,6,26,22,NW)
+REC(29,12,5,10,DP)
+REC(29,-18,5,10,DP)
+REC(22,12,5,10,DP)
+REC(22,-18,5,10,DP)
+REC(36,18,4,4,DN)
+REC(36,-12,4,4,DN)
+REC(3,14,5,10,DN)
+REC(3,-19,5,10,DN)
+REC(-4,14,5,10,DN)
+REC(-4,-19,5,10,DN)
+REC(-3,-12,2,2,CO)
+REC(31,-17,2,2,CO)
+REC(37,-11,2,2,CO)
+REC(23,-17,2,2,CO)
+REC(5,-18,2,2,CO)
+REC(24,27,2,2,CO)
+REC(23,-11,2,2,CO)
+REC(5,-12,2,2,CO)
+REC(-3,-18,2,2,CO)
+REC(24,-3,2,2,CO)
+REC(-2,-4,2,2,CO)
+REC(23,19,2,2,CO)
+REC(31,19,2,2,CO)
+REC(31,-11,2,2,CO)
+REC(23,13,2,2,CO)
+REC(37,19,2,2,CO)
+REC(31,13,2,2,CO)
+REC(23,26,4,4,PO)
+REC(1,11,2,16,PO)
+REC(1,-22,2,21,PO)
+REC(23,-4,4,4,PO)
+REC(27,-21,2,21,PO)
+REC(27,9,2,21,PO)
+REC(-3,-5,4,4,PO)
+REC(30,12,4,12,ME)
+REC(34,-12,6,4,ME)
+REC(34,18,6,4,ME)
+REC(22,-20,4,12,ME)
+REC(23,-4,4,4,ME)
+REC(22,10,4,12,ME)
+REC(-4,-21,4,12,ME)
+REC(30,-18,4,12,ME)
+REC(4,-19,4,12,ME)
+REC(-3,-5,4,4,ME)
+REC(27,12,2,10,DP)
+REC(27,-18,2,10,DP)
+REC(1,14,2,10,DN)
+REC(1,-19,2,10,DN)
+TITLE -3 -29  #n-channel MOS with contacts
+$- 1000 0 
+TITLE 27 -29  #p-channel MOS with contact
+$- 1000 0 
+TITLE -2 9  #n-channel MOS
+$- 1000 0 
+TITLE 28 3  #p-channel MOS
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\basicDevices.MSK

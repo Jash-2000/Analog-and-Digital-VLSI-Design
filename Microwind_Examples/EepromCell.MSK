@@ -1,0 +1,24 @@
+VERSION 5/6/2003 2:32:22 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\EepromCell.MSK
+BB(167,-63,177,-41)
+SIMU #500.00
+REC(170,-63,4,22,M2)
+REC(170,-60,4,4,ME)
+REC(170,-47,4,4,ME)
+REC(167,-47,10,4,ME)
+REC(168,-50,8,2,PO)
+REC(171,-55,6,2,PO)
+REC(167,-55,4,2,PO)
+REC(167,-50,10,2,P2,0)
+REC(171,-59,2,2,CO)
+REC(171,-46,2,2,CO)
+REC(170,-59,4,4,DN)
+REC(170,-48,4,5,DN)
+REC(170,-55,4,2,DN)
+REC(170,-60,4,4,DN)
+REC(170,-54,4,4,DN)
+REC(170,-60,4,5,DN)
+REC(170,-50,4,2,DN)
+TITLE 168 -46  #Vss
+$0 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\EepromCell.MSK
