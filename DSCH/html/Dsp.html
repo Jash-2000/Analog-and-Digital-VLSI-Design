@@ -1,0 +1,241 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Dsp</TITLE>
+<META NAME="Version" CONTENT="8.0.3429">
+<META NAME="Date" CONTENT="11/28/96">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Office\HTML.DOT">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<B><I><FONT SIZE=5 COLOR="#000080"><P><A NAME="top"></A>Digital Signal Processing&nbsp;</P>
+
+<UL>
+<LI><A NAME="display"><A NAME="Copyright"></A></B></I></FONT><A HREF="#display">Display in hexa, int, signed int</A></A> </LI>
+<LI><A HREF="#display8b">8 bit display in hexa, integer, signed integer and fixed</A> </LI>
+<LI><A HREF="#sinus">Digital sinusoidal waveform generation</A> </LI>
+<LI><A HREF="#signedAdd">Signed addition</A></LI></UL>
+
+<P><HR></P>
+<I><FONT SIZE=5 COLOR="#000080"><P>Display in hexa, int, signed int</P>
+</I></FONT><P>In the main symbol palette, the symbol "Hexadecimal display" can be used in three different formats:</P>
+
+<UL>
+<LI>Hexadecimal (by default) </LI>
+<LI>Integer </LI>
+<LI>Unsigned integer</LI></UL>
+<DIR>
+
+<P>The table below gives the correspondence between these formats. Select the schematic diagram "KbdHexaDec.SCH" to see the three interpretation of the numbers, depending on the viewing mode. You can switch from Hex to Integer or unsigned integer by a double click in the display symbol.</P></DIR>
+
+<TABLE BORDER CELLSPACING=1 CELLPADDING=4 WIDTH=626>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Hexadecimal</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>Unsigned Integer</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>Integer</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>0</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>0</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>0</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>1</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>1</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>1</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>2</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>2</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>2</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>3</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>3</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>3</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>4</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>4</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>4</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>5</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>5</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>5</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>6</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>6</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>6</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>7</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>7</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>7</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>8</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>8</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>-8</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>9</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>9</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>-7</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>A</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>10</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>-6</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>B</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>11</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>-5</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>C</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>12</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>-4</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>D</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>13</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>-3</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>E</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>14</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>-2</TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>F</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>15</TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>-1</TD>
+</TR>
+</TABLE>
+
+<P>[<A HREF="#top">Back</A>]</P>
+<P><HR></P>
+<I><FONT SIZE=5 COLOR="#000080"><P><A NAME="display8b"></A>8 bit Display in hexa, int, signed int</P>
+</I></FONT><P>In the symbol library, advanced menu, a new symbol called "8 bit display" is proposed. It displays four different formats:</P>
+
+<UL>
+<LI>Hexadecimal (by default) </LI>
+<LI>Integer </LI>
+<LI>Unsigned integer </LI>
+<LI>Fixed point</LI></UL>
+
+<P>An illustration of the behavior of the 8 bit display is proposed in the schematic diagram "Display8b.SCH", where the four different formats are proposed for the same input data. In signed integer and fixed point, the most significant bit is the sign bit. When the sign bit is 1, data is negative.</P>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=4 WIDTH=633>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+<P>Hexa</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>Unsigned Integer</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>Integer</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>Fixed point</TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+<P>00</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>0</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>0</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>0.000</TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+<P>01</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>1</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>1</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>0.0078125 (2<SUP>e</SUP>-7)</TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+<P>10</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>16</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>16</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>0.125 (2<SUP>e</SUP>-3)</TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+<P>40</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>64</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>64</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>0.5 (2<SUP>e</SUP>-1)</TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+<P>80</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>128</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>-128</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>-1.0 (-2<SUP>e</SUP>0) </TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+<P>FF</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>255</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>-1</TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>-0.0078125 (-2<SUP>e</SUP>-7) </TD>
+</TR>
+</TABLE>
+
+<P>[<A HREF="#top">Back</A>]</P>
+<P><HR></P>
+<I><FONT SIZE=5 COLOR="#000080"><P><A NAME="sinus"></A>Digital Sinusoidal Wave</P>
+</I></FONT><P>In the symbol library, advanced menu, a new symbol called "Digital sinus" is proposed to generate an 8 bit information corresponding to a sinusoidal waveform. The two parameters of this symbol are the amplitude and the clock period. Notice that the sinusoidal waveform is centered to 0. Use and 8 bit display in fixed point mode to properly follow the sinusoidal waveform.</P>
+<P>[<A HREF="#top">Back</A>]</P>
+<P><HR></P>
+<I><FONT SIZE=5 COLOR="#000080"><P><A NAME="signedAdd"></A>Signed addition</P>
+</I></FONT><P>Signed addition (Add4Signed.SCH) is performed with the same circuit as for unsigned addition (ADD4.SCH). The three display symbols are programmed as signed integers. Notice that , in the case of data overflow, such as 5+3, the result becomes -8 rather than 8.</P>
+<P>[<A HREF="#top">Back</A>]</P></BODY>
+</HTML>
