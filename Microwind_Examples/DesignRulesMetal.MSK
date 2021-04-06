@@ -1,0 +1,41 @@
+VERSION 22/06/02 17:01:43
+FIG #C:\microwind2\Book on CMOS\DesignRulesMetal.MSK
+BB(16,11,146,129)
+SIMU #0.50
+REC(24,16,3,45,ME)
+REC(17,16,3,45,ME)
+REC(46,16,3,45,M2)
+REC(53,16,3,45,M2)
+REC(85,16,3,45,M3)
+REC(78,16,3,45,M3)
+REC(114,16,3,45,M4)
+REC(107,16,3,45,M4)
+REC(17,84,8,30,M5)
+REC(33,84,8,30,M5)
+REC(75,84,8,30,M6)
+REC(59,84,8,30,M6)
+TITLE 16 64  #Width 3, spacing 4
+$- 1000 0 
+TITLE 16 11  #Metal 1
+$- 1000 0 
+TITLE 45 11  #Metal 2
+$- 1000 0 
+TITLE 45 64  #Width 3, spacing 4
+$- 1000 0 
+TITLE 77 64  #Width 3, spacing 4
+$- 1000 0 
+TITLE 77 11  #Metal 3
+$- 1000 0 
+TITLE 106 11  #Metal 4
+$- 1000 0 
+TITLE 106 64  #Width 3, spacing 4
+$- 1000 0 
+TITLE 18 81  #Metal 5
+$- 1000 0 
+TITLE 63 81  #Metal 6
+$- 1000 0 
+TITLE 19 119  #Width 8, spacing 8
+$- 1000 0 
+TITLE 60 118  #Width 8, spacing 8
+$- 1000 0 
+FFIG C:\microwind2\Book on CMOS\DesignRulesMetal.MSK

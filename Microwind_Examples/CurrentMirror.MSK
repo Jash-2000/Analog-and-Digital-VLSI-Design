@@ -1,0 +1,39 @@
+VERSION 5/13/2003 7:46:36 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\CurrentMirror.MSK
+BB(80,26,139,74)
+SIMU #100.00
+REC(126,45,5,4,DN)
+REC(117,45,5,4,DN)
+REC(98,45,5,4,DN)
+REC(89,45,5,4,DN)
+REC(95,54,2,2,CO)
+REC(118,46,2,2,CO)
+REC(117,54,2,2,CO)
+REC(90,46,2,2,CO)
+REC(128,46,2,2,CO)
+REC(100,46,2,2,CO)
+REC(94,42,4,15,PO)
+REC(122,42,4,15,PO)
+REC(116,53,6,4,PO)
+REC(94,53,26,4,ME)
+REC(99,45,4,8,ME)
+REC(80,28,59,5,ME)
+REC(127,45,4,29,ME)
+REC(89,33,4,16,ME)
+REC(94,57,4,17,ME)
+REC(117,33,4,16,ME)
+REC(94,45,4,4,DN)
+REC(122,45,4,4,DN)
+TITLE 85 31  #Vss
+$0 1000 0 
+TITLE 130 73  #V2 (Varying)
+$c 1000 0   0.50   5.50   6.00  11.00 
+TITLE 81 51  #N1: Reference current
+$- 1000 0 
+TITLE 97 73  #V1: reference voltage
+$1 500 0 
+TITLE 132 42  #N2:Copied current (Same W/L)
+$- 1000 0 
+TITLE 111 26  #BSIM4
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\CurrentMirror.MSK

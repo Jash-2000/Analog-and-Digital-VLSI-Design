@@ -1,0 +1,27 @@
+VERSION 4/7/2003 2:45:59 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\diode.MSK
+BB(2,13,114,45)
+SIMU #5.00
+REC(25,13,28,25,NW)
+REC(106,26,4,4,ME)
+REC(32,19,14,13,DP)
+REC(79,27,4,4,ME)
+REC(107,27,2,2,CO)
+REC(6,19,13,13,DN)
+REC(80,28,2,2,CO)
+REC(106,26,4,4,DN)
+REC(79,27,4,4,DP)
+REC(101,21,13,14,NW)
+TITLE 12 45  #Native diodes in CMOS process
+$- 1000 0 
+TITLE 2 14  #N+ over Psubstrate
+$- 1000 0 
+TITLE 32 16  #P+ over n-well
+$- 1000 0 
+TITLE 106 14  #P+/Nwell
+$- 1000 0 
+TITLE 80 13  #N+ /Psub
+$- 1000 0 
+TITLE 81 43  #Minimum size diodes with contacts
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\diode.MSK

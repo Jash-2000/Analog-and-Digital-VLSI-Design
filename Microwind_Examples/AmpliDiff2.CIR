@@ -1,0 +1,55 @@
+CIRCUIT C:\microwind2\Book on CMOS\AmpliDiff2.MSK
+*
+* IC Technology: CMOS 0.12µm - 6 Metal
+*
+VDD 1 0 DC 1.20
+VV+ 6 0 PULSE(0.00 1.20 0.50N 5.00N 5.00N 0.50N 11.00N)
+*
+* List of nodes
+* "pMOS current mirror" corresponds to n°2
+* "Vout" corresponds to n°4
+* "N5" corresponds to n°5
+* "V+" corresponds to n°6
+*
+* MOS devices
+MN1 0 4 4 0 N1  W= 0.36U L= 0.12U
+MN2 5 6 0 0 N1  W= 0.36U L= 0.12U
+MP1 2 5 4 2 P1  W= 0.84U L= 0.12U
+MP2 5 5 2 2 P1  W= 0.84U L= 0.12U
+*
+C2 2 0  2.346fF
+C4 4 0  0.618fF
+C5 5 0  0.733fF
+C6 6 0  0.144fF
+*
+*
+* n-MOS BSIM4 :
+* low leakage
+.MODEL N1 NMOS LEVEL=14 VTO=0.40 U0=0.050 TOX= 3.5E-9 LINT=0.010U 
++K1 =0.450 K2=0.100 DVT0=2.300
++DVT1=0.540 LPE0=23.000e-9 ETA0=0.080
++NFACTOR=  1.6 U0=0.050 UA=3.000e-15
++WINT=0.020U LPE0=23.000e-9 
++KT1=-0.060 UTE=-1.800 VOFF=0.050
++XJ=0.150U NDEP=170.000e15 PCLM=1.100
++CGSO=100.0p CGDO=100.0p
++CGBO= 60.0p CJSW=240.0p
+*
+* p-MOS BSIM4:
+* low leakage
+.MODEL P1 PMOS LEVEL=14 VTO=-0.45 U0=0.018 TOX= 3.5E-9 LINT=0.010U 
++K1 =0.450 K2=0.100 DVT0=2.300
++DVT1=0.540 LPE0=23.000e-9 ETA0=0.080
++NFACTOR=  1.6 U0=0.018 UA=3.000e-15
++WINT=0.020U LPE0=23.000e-9 
++KT1=-0.060 UTE=-1.800 VOFF=0.050
++XJ=0.150U NDEP=170.000e15 PCLM=0.700
++CGSO=100.0p CGDO=100.0p
++CGBO= 60.0p CJSW=240.0p
+*
+* Transient analysis
+*
+.TEMP 27.0
+.TRAN 0.30PS 10.00N
+.PROBE
+.END

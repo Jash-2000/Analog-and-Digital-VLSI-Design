@@ -1,0 +1,79 @@
+VERSION 4/8/2003 8:45:30 AM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\AntennaRules.MSK
+BB(-152,-67,140,87)
+SIMU #2.00
+REC(118,-5,6,6,OP,32)
+REC(135,17,5,4,DN)
+REC(135,-14,5,4,DN)
+REC(128,17,5,4,DN)
+REC(128,-14,5,4,DN)
+REC(119,-4,4,4,DN)
+REC(-4,60,5,10,DN)
+REC(-11,60,5,10,DN)
+REC(-2,67,2,2,CO)
+REC(-10,67,2,2,CO)
+REC(-10,61,2,2,CO)
+REC(120,-3,2,2,CO)
+REC(137,-13,2,2,CO)
+REC(133,-3,2,2,CO)
+REC(137,18,2,2,CO)
+REC(129,-13,2,2,CO)
+REC(129,18,2,2,CO)
+REC(-6,77,2,2,CO)
+REC(133,28,2,2,CO)
+REC(-2,61,2,2,CO)
+REC(133,14,2,13,PO)
+REC(132,27,4,4,PO)
+REC(132,-4,4,4,PO)
+REC(-6,57,2,19,PO)
+REC(133,-18,2,14,PO)
+REC(-7,76,4,4,PO)
+REC(-151,76,148,4,ME)
+REC(-11,58,4,12,ME)
+REC(-150,-4,116,4,ME)
+REC(-150,27,286,4,ME)
+REC(-3,60,4,10,ME)
+REC(136,-14,4,4,ME)
+REC(136,17,4,4,ME)
+REC(128,17,4,4,ME)
+REC(128,-14,4,4,ME)
+REC(-29,-4,165,4,ME)
+REC(133,17,2,4,DN)
+REC(-6,60,2,10,DN)
+REC(133,-14,2,4,DN)
+REC(-34,-4,5,4,ME)
+REC(133,-56,5,4,DN)
+REC(126,-56,5,4,DN)
+REC(135,-55,2,2,CO)
+REC(127,-55,2,2,CO)
+REC(131,-45,2,2,CO)
+REC(131,-59,2,13,PO)
+REC(130,-46,4,4,PO)
+REC(94,-46,19,4,M2)
+REC(134,-56,4,4,ME)
+REC(126,-56,4,4,ME)
+REC(131,-56,2,4,DN)
+REC(109,-46,4,4,M2)
+REC(113,-46,21,4,ME)
+REC(109,-46,4,4,ME)
+REC(110,-45,2,2,VI)
+REC(-152,-46,250,4,ME)
+REC(95,-45,2,2,VI)
+REC(94,-46,4,4,ME)
+REC(94,-46,4,4,M2)
+RLCR -34 -2 -29 -2 1 #10000
+TITLE -45 87  #(a) Correct design
+$- 1000 0 
+TITLE 34 39  #(b) Dangerous design: large metal area, small gate oxide
+$- 1000 0 
+TITLE 35 6  #(c) Design corrected by a N+/p-substrate diode
+$- 1000 0 
+TITLE -138 -2  #sinus1
+$s 500 8333 1000.00   0.00   0.00   0.00 
+TITLE -69 -67  #BSIM4
+$- 1000 0 
+TITLE 130 -2  #Gate_protected
+$v 1000 0 
+TITLE 32 -34  #(d) Alternative: discontinuity in the interconnect
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\AntennaRules.MSK

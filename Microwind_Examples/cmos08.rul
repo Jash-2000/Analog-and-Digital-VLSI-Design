@@ -1,0 +1,224 @@
+MICROWIND v2
+*
+* Rule file for CMOS 0.8µm
+*
+* 19 Dec 97
+* 10 Jan 99 : fit crosstalk capa
+* 11 Mar 99 : r203, r204 to 6 lambda (Is it 8?)
+* 22 Avr 99 : r605 distance via contact
+* 27 Avr 99 : Cmetal2Body lower, r201,r202,r203,r204, overetch diff
+* 26 Feb 00 : vertical aspect
+*
+NAME CMOS 0.8µm - 2 Metal
+*
+lambda = 0.4     (Lambda is set to half the lithography)
+metalLayers = 2  (Number of metal layers : 5)
+ldd = 0          (No lateral drain diffusion)
+*
+* Design rules associated to each layer
+*
+* Well
+r101 = 13    (well width)
+r102 = 18    (well spacing)
+*
+* Diffusion
+*
+r201 = 5     (diffusion width)
+r202 = 6     (diffusion spacing, mainly due to P+ implant)
+r203 = 8     (border of nwell on diffp)
+r204 = 8     (nwell to next diffn)
+r205 = 5     (diffn to diffp)
+* Poly
+r301 = 2     (poly width)
+r302 = 2     (gate length)
+r304 = 3     (poly spacing)
+r305 = 1     (spacing poly and unrelated diff)
+r306 = 4     (width of drain and source diff)
+r307 = 2     (extra gate poly)
+* Contact
+r401 = 2     (contact width)
+r402 = 3     (contact spacing)
+r403 = 2     (metal,diff,poly border for contact)
+* Metal
+r501 = 3    (metal width)
+r502 = 3    (metal spacing)
+* Via
+r601 = 3    (Via width)
+r602 = 3    (Spacing)
+r603 = 3    (To unrelated contact)
+r604 = 2    (border of metal&metal2)
+r605 = 2    (distance via poly)
+*   metal 2
+r701 = 3    (Metal 2 width)
+r702 = 3    (spacing)
+*
+* Pads
+*
+rp01 = 300 (Pad width)
+rp02 = 300  (Pad spacing)
+rp03 = 8    (Border of Via for passivation )
+rp04 = 18   (Border of metals)
+rp05 = 45   (to unrelated active areas)
+*
+*
+* Thickness of layers
+*
+thpoly = 0.4
+hepoly = 0.5
+thdn = 0.8
+thdp = 0.8
+thnw = 3
+hesti = -1
+thsti = 1.5
+heepi = -6
+thepi = 2
+thme = 0.7
+heme = 1.1
+thm2 = 1.0
+hem2 = 2.5
+thpass = 0.5
+hepass = 3.5
+thnit = 0.5
+henit = 4.0
+*
+* Resistance (ohm / square)
+*
+repo = 25
+reme = 0.07
+rem2 = 0.040
+*
+* Parasitic capacitances
+*
+cpoOxyde = 1800 (Surface capacitance Poly/Thin oxyde aF/µm2)
+cpobody = 66    (Poly/Body)
+cmebody = 40
+cmelineic = 30   (aF/µm)
+cm2body = 20
+cm2lineic = 20  (aF/µm)
+*
+* Vertical crosstalk (aF/µm2)
+*
+cmepoly = 52
+cm2metal = 50
+*
+* Lateral Crosstalk (aF/µm)
+*
+cmextk = 10      (Lineic capacitance for metal crosstalk coupling )
+cm2xtk = 10      (at 4 lambda spacing)
+*
+* Junction capacitances
+*
+cdnpwell = 350   (n+/psub)
+cdpnwell = 400  (p+/nwell)
+cnwell = 100    (nwell/psub)
+cpwell = 100    (pwell/nsub)
+cldn = 300      (Lineic capacitance N+/P- aF/æm)
+cldp = 300      (Idem for P+/N-)
+*
+* Nmos Model 3 parameters
+*
+NMOS
+l3vto = 0.8
+l3vmax = 130e3
+l3gamma = 0.7
+l3theta = 0.18
+l3kappa = 0.03
+l3phi = 0.7
+l3ld = 0.06
+l3u0 = 0.06
+l3tox = 20e-9
+l3nss = 0.07
+l3cgd = 1e-10
+*
+* Pmos Model 3
+*
+PMOS
+l3vto = -0.8
+l3vmax = 100e3
+l3gamma = 0.45
+l3theta = 0.18
+l3kappa = 0.04
+l3phi = 0.7
+l3ld = -0.05
+l3u0 = 0.02
+l3tox = 20e-9
+l3nss = 0.07
+l3cgd = 1e-10
+*
+* BSIM4 parameters
+* Nmos
+*
+NMOS
+b4vtho = 0.69
+b4k1 = 0.22
+b4k2 = 0.1
+b4xj = 1.7e-7
+b4toxe = 20e-9
+b4ndep = 1.8e17
+b4d0vt = 2.3
+b4d1vt = 0.54
+b4vfb = -0.9
+b4u0 = 0.058
+b4ua = 2.9e-15
+b4uc = -0.047e-15
+b4vsat = 80e3
+b4pscbe1 =320e6
+b4ute = -1.8
+b4kt1 = -0.06
+b4lint = 0.01e-6
+b4wint = 0.02e-6
+b4xj = 1.5e-7
+b4ndep = 1.7e17
+b4pclm = 1.1
+*
+* Pmos BSIM4
+*
+PMOS
+b4vtho = 0.8
+b4k1 = 0.2
+b4k2 = 0.1
+b4xj = 1.7e-7
+b4toxe = 20e-9
+b4ndep = 1.8e17
+b4d0vt = 2.3
+b4d1vt = 0.54
+b4vfb = -0.9
+b4nfact = 2.2
+b4u0 = 0.02
+b4ua = 3e-15
+b4uc = -0.047e-15
+b4vsat = 50e3
+b4pscbe1 =320e6
+b4ute = -1.8
+b4kt1 = -0.06
+b4lint = 0.01e-6
+b4nfact = 2.2
+b4wint = 0.02e-6
+b4xj = 1.5e-7
+b4ndep = 1.7e17
+b4pclm = 0.7
+*
+* MicroWind simulation parameters
+*
+deltaT = 5.0e-12   (Minimum simulation interval dT)
+vdd = 5.0
+temperature = 27
+*
+* CIF
+* MicroWind name, Cif name, overetch for final translation
+*
+cif nwell NTUB 0.0
+cif aarea AAREA 0.0
+cif poly POLY1 0.0
+cif poly2 POLY2 0.0
+cif diffn NPLUS 0.8
+cif diffp PPLUS  0.8
+cif contact CONT  0.1
+cif metal MET1 0.0
+cif via VIA  0.0
+cif metal2 MET2  0.0
+cif passiv PAD  0.0
+cif text 94 0.0
+*
+* End CMOS 0.8µm
+*

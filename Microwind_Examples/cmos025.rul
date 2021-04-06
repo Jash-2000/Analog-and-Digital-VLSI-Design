@@ -1,0 +1,308 @@
+MICROWIND 2.0a
+*
+* Rule File for CMOS 0.25µm
+* Date : 17 Jun 97 by Etienne Sicard
+*        05 Jan 99 rise time
+*        27 Apr 99 fit model with measures
+*        16 May 99 via/contact r603
+*        11 Nov 99 phi 0.3, vto 0.45
+*        04 Jan 00 dt smaller
+*        19 Fev 00 thickness STI
+*        14 Mar 01 tox
+*
+*
+NAME CMOS 0.25µm - 6 Metal
+*
+lambda = 0.125     (Lambda is set to half the gate size)
+metalLayers = 6    (Number of metal layers : 6)
+lowK = 3.9         (inter-metal oxide)
+*
+* Design rules associated to each layer
+*
+* Well (Gds2 level 1)
+r101 = 10    (well width)
+r102 = 11    (well spacing)
+*
+* Diffusion (N+ 16, P+ 17, active 2)
+*
+r201 = 4     (diffusion width)
+r202 = 4     (diffusion spacing)
+r203 = 6     (border of nwell on diffp)
+r204 = 6     (nwell to next diffn)
+r205 = 0     (polarisation to diff)
+*
+* Poly (13)
+*
+r301 = 2     (poly width)
+r302 = 2     (gate length)
+r303 = 4     (high voltage gate length)
+r304 = 3     (poly spacing)
+r305 = 2     (spacing poly and unrelated diff)
+r306 = 4     (width of drain and source diff)
+r307 = 3     (extra gate poly)
+* Contact (19)
+r401 = 2     (contact width)
+r402 = 5     (contact spacing)
+r404 = 2     (metal,poly,diff border for contact)
+*  metal (23)
+r501 = 3    (metal width)
+r502 = 4    (metal spacing)
+*  via  (25)
+r601 = 2    (Via width)
+r602 = 5    (Spacing)
+r603 = 0    (via/contact)
+r604 = 2    (border of metal&metal2)
+*  metal 2 (27)
+r701 = 3    (Metal 2 width)
+r702 = 4    (spacing)
+*  via 2 (32)
+r801 = 2    (Via width)
+r802 = 5    (Spacing)
+r804 = 2    (border of metal2&metal3)
+*  metal 3 (34)
+r901 = 3    (width)
+r902 = 4    (spacing)
+*  via 3 (35)
+ra01 = 2    (Via width)
+ra02 = 5    (Spacing)
+ra04 = 2    (border of metal3&metal4)
+*  metal 4 (36)
+rb01 = 3    (width)
+rb02 = 4    (spacing)
+*  via 4 (52)
+rc01 = 2    (Via width)
+rc02 = 5    (Spacing)
+rc04 = 3    (border of metal4&metal5)
+*  metal 5 (53)
+rd01 = 8    (width)
+rd02 = 8    (spacing)
+*  via 5 (54)
+re01 = 4    (Via width)
+re02 = 6    (Spacing)
+re04 = 2    (border of metal5&metal6)
+*  metal 6 (55)
+rf01 = 8    (width)
+rf02 = 15   (spacing)
+*
+* Passivation nitride (31) and pad rules
+*
+rp01 = 800  (Pad width)
+rp02 = 800  (Pad spacing)
+rp03 = 40   (Border of Vias)
+rp04 = 40   (Border of metals)
+rp05 = 200  (to unrelated active areas)
+*
+* Thickness of conductors for process aspect
+* All in µm
+*
+heepi = -4
+thepi = 1
+hesti = -1
+thsti = 1.25
+thpoly = 0.30
+hepoly = 0.25
+thdn = 0.5
+thdp = 0.5
+thnw = 1.5
+thme = 0.6
+heme = 0.9
+thm2 = 0.6
+hem2 = 2.2
+thm3 = 0.6
+hem3 = 3.3
+thm4 = 0.6
+hem4 = 4.4
+thm5 = 0.7
+hem5 = 5.5
+thm6 = 0.7
+hem6 = 7.0
+thpass = 0.5
+hepass = 8.0
+thnit = 0.6
+henit = 8.5
+*
+* Resistances
+* Unit is ohm/square
+*
+repo = 4
+redn = 250
+redp = 300
+rep2 = 4
+reco = 2
+reme = 0.250
+revi = 2
+rem2 = 0.055
+rev2 = 3
+rem3 = 0.055
+rev3 = 3
+rem4 = 0.055
+rev4 = 2
+rem5 = 0.035
+rev5 = 1
+rem6 = 0.035
+*
+*
+* Parasitic capacitances
+*
+cpoOxyde= 7000 (Surface capacitance Poly/Thin oxyde aF/µm2)
+cpobody = 80    (Poly/Body)
+cmebody = 28
+cmelineic = 42
+cmepoly = 60
+cm2body = 13
+cm2lineic = 36
+cm2metal = 38
+cm3body = 8
+cm3lineic = 33
+cm4body = 6
+cm4lineic = 30
+cm5body = 5
+cm5lineic = 31
+cm6body = 4
+cm6lineic = 30
+cgsn = 500          ( Gate/source capa of nMOS)
+cgsp = 500
+*
+* Vertical crosstalk
+*
+cm2me = 50
+cm3m2 = 50
+cm4m3 = 50
+cm5m4 = 50
+cm6m5 = 50
+*
+* Lateral Crosstalk
+*
+cmextk = 15    (Lineic capacitance for crosstalk coupling in aF/µm)
+cm2xtk = 15    (C is computed using Cx=cmextk*l/spacing)
+cm3xtk = 15
+cm4xtk = 15
+cm5xtk = 20
+cm6xtk = 20
+*
+* Junction capacitances
+*
+cdnpwell = 350  (n+/psub)
+cdpnwell = 300  (p+/nwell)
+cnwell = 250    (nwell/psub)
+cpwell = 100    (pwell/nsub)
+cldn = 120      (Lineic capacitance N+/P- aF/µm)
+cldp = 120      (Idem for P+/N-)
+*
+* Nmos Model 3 parameters
+*
+NMOS
+l3vto = 0.45
+l3vmax = 130e3
+l3gamma = 0.4
+l3theta = 0.3
+l3kappa = 0.01
+l3phi = 0.2
+l3ld = 0.02
+l3u0 = 0.06
+l3tox = 5e-9
+l3nss = 0.07
+*
+* Pmos Model 3
+*
+PMOS
+l3vto = -0.45
+l3vmax = 100e3
+l3gamma = 0.4
+l3theta = 0.3
+l3kappa = 0.01
+l3phi = 0.2
+l3ld = 0.02
+l3u0 = 0.02
+l3tox = 5e-9
+l3nss = 0.07
+*
+* BSIM4 parameters
+* Nmos
+*
+NMOS
+b4vtho = 0.45
+b4k1 = 0.17
+b4k2 = 0.1
+b4xj = 1.7e-7
+b4nfact = 3.0
+b4toxe = 5e-9
+b4ndep = 1.8e17
+b4d0vt = 2.3
+b4d1vt = 0.54
+b4vfb = -0.9
+b4u0 = 0.062
+b4ua = 7e-15
+b4uc = -0.047e-15
+b4vsat = 80e3
+b4pscbe1 =320e6
+b4ute = -1.8
+b4kt1 = -0.06
+b4lint = -0.01e-6
+b4wint = 0.02e-6
+b4xj = 1.5e-7
+b4ndep = 1.7e17
+b4pclm = 0.29
+*
+* Pmos BSIM4
+*
+PMOS
+b4vtho = 0.5
+b4k1 = 0.29
+b4k2 = 0.1
+b4xj = 1.7e-7
+b4nfact = 3.0
+b4toxe = 5e-9
+b4ndep = 1.8e17
+b4d0vt = 2.3
+b4d1vt = 0.54
+b4vfb = -0.9
+b4nfact = 2.2
+b4u0 = 0.01
+b4ua = 1e-15
+b4uc = -0.047e-15
+b4vsat = 60e3
+b4pscbe1 =320e6
+b4ute = -1.8
+b4kt1 = -0.06
+b4lint = -0.04e-6
+b4wint = 0.02e-6
+b4xj = 1.5e-7
+b4ndep = 1.7e17
+b4pclm = 0.3
+*
+*
+*
+* CIF Layers
+* MicroWind layer, CIF layer, overetch
+*
+cif nwell 1 0.0
+cif diffp 17 0.25
+cif diffn 16 0.25
+cif aarea 2  0
+cif poly 13  0.0
+cif contact 19 0.025
+cif metal 23  0
+cif via 25  0.075
+cif metal2 27 0
+cif via2 32  0.075
+cif metal3  34 0
+cif via3 35  0.075
+cif metal4  36 0
+cif via4 52 0.075
+cif metal5  53 0.0
+cif via5  54 0.05
+cif metal6  55 0.0
+cif passiv  31 0.0
+cif text 94 0.0
+*
+*
+* MicroWind simulation parameters
+*
+deltaT = 0.8e-12   (Minimum simulation interval dT)
+vdd = 2.5
+temperature = 27
+riseTime = 0.05
+*
+* End CMOS 0.25 µm
+*

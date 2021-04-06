@@ -1,0 +1,40 @@
+[IBIS ver]       2.1
+[File name]      default.ibs
+[File Rev]       03/22/02
+[Date]           03/22/0
+[Source]         Microwind2
+[Notes]          This file describes the IBIS model 
+|                to control the Microwind floorplan
+|                
+[Copyright]      Etienne SICARD
+[Component]      BENCH01 
+[Manufacturer]   INSA 
+[Package]
+R_pkg  1
+L_pkg  5nH
+C_pkg  2pF
+|
+[Pin]  signal_name model_name  
+1 A in1
+2 B in1
+3 C in1
+4 VDD1 power
+5 VSS1 gnd
+6 Clk in1
+7 D in1
+8 nand2 out1
+9 nor2 out1
+10 VDD2 power
+11 VSS2 gnd
+12 carry out1
+13 nor4 out1
+14 or3 out1
+15 Q out1
+16 VDD3 power
+17 VSS3 gnd
+18 sum out1
+19 carry out1
+20 carryBuff out1
+21 xorb out1
+22 abuf out1
+[END]

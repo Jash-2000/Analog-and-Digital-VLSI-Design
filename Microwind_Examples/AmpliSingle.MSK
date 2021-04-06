@@ -1,0 +1,56 @@
+VERSION 5/13/2003 9:29:13 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\AmpliSingle.MSK
+BB(26,14,136,83)
+SIMU #5.00
+REC(60,35,25,21,NW)
+REC(74,41,5,4,DP)
+REC(66,41,5,4,DP)
+REC(75,50,4,4,DN)
+REC(37,17,5,33,DN)
+REC(30,17,5,33,DN)
+REC(31,36,2,2,CO)
+REC(34,54,2,2,CO)
+REC(71,35,2,2,CO)
+REC(31,30,2,2,CO)
+REC(76,42,2,2,CO)
+REC(31,24,2,2,CO)
+REC(31,18,2,2,CO)
+REC(39,30,2,2,CO)
+REC(39,42,2,2,CO)
+REC(39,24,2,2,CO)
+REC(31,42,2,2,CO)
+REC(39,36,2,2,CO)
+REC(39,18,2,2,CO)
+REC(67,42,2,2,CO)
+REC(76,51,2,2,CO)
+REC(71,38,3,10,PO)
+REC(35,14,2,39,PO)
+REC(33,53,4,4,PO)
+REC(70,34,4,4,PO)
+REC(30,15,4,30,ME)
+REC(26,53,11,4,ME)
+REC(38,17,4,33,ME)
+REC(75,41,4,17,ME)
+REC(66,34,4,11,ME)
+REC(42,41,24,4,ME)
+REC(70,34,28,4,ME)
+REC(71,41,3,4,DP)
+REC(35,17,2,33,DN)
+RLCC 96 37 101 37 1 #0.01
+TITLE 51 43  #Vout
+$v 1000 0 
+TITLE 32 15  #Vss
+$0 1000 0 
+TITLE 62 29  #Active load (pMOS)
+$- 1000 0 
+TITLE 77 56  #Vdd
+$1 1000 0 
+TITLE 33 83  #Single stage amplifier at 1GHz
+$- 1000 0 
+TITLE 27 55  #Vin
+$s 500 42 1000.00   0.50   0.00   0.00 
+TITLE 33 77  #BSIM4 used in simulation
+$- 1000 0 
+TITLE 94 41  #Parasitic output load
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\AmpliSingle.MSK

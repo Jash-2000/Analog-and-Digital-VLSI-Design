@@ -1,0 +1,94 @@
+VERSION 5/13/2003 10:43:36 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\AmpliDiff.MSK
+BB(-16,-10,39,63)
+SIMU #10.00
+REC(-15,21,54,32,NW)
+REC(28,8,4,4,DP)
+REC(15,27,5,14,DP)
+REC(5,27,8,14,DP)
+REC(-2,27,5,14,DP)
+REC(-13,8,4,4,DP)
+REC(15,7,5,6,DN)
+REC(5,7,8,6,DN)
+REC(-2,7,5,6,DN)
+REC(-13,28,4,4,DN)
+REC(-1,38,2,2,CO)
+REC(9,44,2,2,CO)
+REC(-12,29,2,2,CO)
+REC(-12,9,2,2,CO)
+REC(17,38,2,2,CO)
+REC(2,-1,2,2,CO)
+REC(8,36,2,2,CO)
+REC(13,-9,2,2,CO)
+REC(-1,29,2,2,CO)
+REC(8,29,2,2,CO)
+REC(13,-9,2,2,CO)
+REC(29,9,2,2,CO)
+REC(29,9,2,2,CO)
+REC(17,9,2,2,CO)
+REC(8,9,2,2,CO)
+REC(2,-1,2,2,CO)
+REC(17,29,2,2,CO)
+REC(-1,9,2,2,CO)
+REC(-12,9,2,2,CO)
+REC(3,43,12,3,PO)
+REC(3,24,2,19,PO)
+REC(1,-2,4,4,PO)
+REC(3,2,2,14,PO)
+REC(13,-6,2,22,PO)
+REC(8,46,4,1,PO)
+REC(12,-10,4,4,PO)
+REC(13,24,2,19,PO)
+REC(-13,-2,18,4,ME)
+REC(16,8,4,33,ME)
+REC(7,8,4,4,ME)
+REC(-2,43,14,4,ME)
+REC(28,8,4,4,ME)
+REC(7,28,4,11,ME)
+REC(-13,28,4,4,ME)
+REC(-13,8,4,4,ME)
+REC(-2,8,4,35,ME)
+REC(-13,-10,29,4,ME)
+REC(20,17,15,4,ME)
+REC(8,29,2,2,VI)
+REC(-12,9,2,2,VI)
+REC(29,9,2,2,VI)
+REC(-12,29,2,2,VI)
+REC(8,9,2,2,VI)
+REC(-13,8,4,4,M2)
+REC(7,8,4,4,M2)
+REC(7,28,4,4,M2)
+REC(-13,28,4,4,M2)
+REC(28,8,4,4,M2)
+REC(-12,9,2,2,V2)
+REC(29,9,2,2,V2)
+REC(8,9,2,2,V2)
+REC(-12,29,2,2,V2)
+REC(8,29,2,2,V2)
+REC(-16,26,55,8,M3)
+REC(-15,6,53,8,M3)
+REC(13,27,2,14,DP)
+REC(3,27,2,14,DP)
+REC(13,7,2,6,DN)
+REC(3,7,2,6,DN)
+TITLE 0 -8  #Vm
+$c 625 542   2.00   3.00   5.00   6.00 
+TITLE -11 0  #Vp
+$O 583 500 
+TITLE -7 29  #Vdd
+$1 1000 0 
+TITLE -9 10  #Vss
+$0 1000 0 
+TITLE 32 19  #Vout
+$v 1000 0 
+TITLE -11 63  #Differential Amplifier
+$- 1000 0 
+TITLE 24 44  #pMOS current mirror
+$- 1000 0 
+TITLE 11 1  #nMOS differential pair
+$- 1000 0 
+TITLE -11 58  #Used to compare two analog input voltages
+$- 1000 0 
+TITLE 37 -3  #BSIM4
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\AmpliDiff.MSK

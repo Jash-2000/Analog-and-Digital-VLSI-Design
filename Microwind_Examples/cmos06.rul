@@ -1,0 +1,242 @@
+MICROWIND v2.00
+*
+* Rule file for CMOS 0.6µm 3 metal layer
+*
+* 19 Dec 97
+* 10 Dec 98  add 3rd level
+* 28 Dec 98 technology parameters
+* 22 Fev 99 ctk parameters
+* 27 Fev 00 vertical aspect
+* 15 May 03 bsim4, tox, cox update
+*
+NAME CMOS 0.6µm - 3 Metal
+*
+lambda = 0.3     (Lambda is set to half the lithography)
+metalLayers = 3  (Number of metal layers)
+ldd = 0          (no lateral drain diffusion)
+*
+* Design rules associated to each layer
+*
+* Well
+r101 = 10    (well width)
+r102 = 16    (well spacing)
+*
+* Diffusion
+*
+r201 = 3     (diffusion width)
+r202 = 4     (diffusion spacing)
+r203 = 6     (border of nwell on diffp)
+r204 = 6     (nwell to next diffn)
+r205 = 5     (diffn to diffp)
+* Poly
+r301 = 2     (poly width)
+r302 = 2     (gate length)
+r304 = 3     (poly spacing)
+r305 = 1     (spacing poly and unrelated diff)
+r306 = 4     (width of drain and source diff)
+r307 = 2     (extra gate poly)
+* Contact
+r401 = 2     (contact width)
+r402 = 3     (contact spacing)
+r403 = 2     (metal border for contact)
+r404 = 2     (poly border for contact)
+r405 = 2     (diff border for contact)
+* Metal
+r501 = 3    (metal width)
+r502 = 3    (metal spacing)
+* Via
+r601 = 2    (Via width)
+r602 = 3    (Spacing)
+r603 = 3    (To unrelated contact)
+r604 = 2    (border of metal&metal2)
+*   metal 2
+r701 = 3    (Metal 2 width)
+r702 = 3    (spacing)
+* Via2
+r801 = 2    (Via2 width)
+r802 = 3    (Spacing)
+r803 = 3    (To unrelated contact)
+r804 = 2    (border of metal2&metal3)
+*   metal 3
+r901 = 4    (Metal 3 width)
+r902 = 4    (spacing)
+*
+* Pads
+*
+rp01 = 335 (Pad width)
+rp02 = 335  (Pad spacing)
+rp03 = 10   (Border of Via for passivation )
+rp04 = 23   (Border of metals)
+rp05 = 62   (to unrelated active areas)
+*
+*
+* Thickness of layers
+*
+thpoly = 0.4
+thdn = 0.6
+thdp = 0.6
+thnwell = 2
+heepi = -8
+thepi = 2
+thsti = 1.3
+hesti = -1.0
+hepoly = 0.3
+thme = 0.7
+heme = 1.1
+thm2 = 1.0
+hem2 = 2.8
+thm3 = 1.2
+hem3 = 4.8
+thpass = 1.0
+hepass = 6.0
+thnit = 0.8
+henit = 6.8
+*
+* Resistance (ohm / square)
+*
+repo = 30
+reco = 20
+reme = 0.1
+revi = 0.5
+rem2 = 0.04
+rev2 = 0.5
+rem3 = 0.03
+*
+* Parasitic capacitances
+*
+* (Surface capacitance Poly/Thin oxyde aF/µm2)
+cpoOxyde = 2400
+* (Poly/Body)
+cpobody = 53
+cmebody = 40
+cmelineic = 20   (aF/µm)
+cmepoly = 52
+cm2body = 56
+cm2lineic = 20  (aF/µm)
+cm2metal = 50
+cm3metal = 30
+*
+* Crosstalk
+*
+cmextk = 10      (Lineic capacitance for crosstalk coupling in aF/µm/µm)
+cm2xtk = 10      (C is computed using Cx=cmextk*l/spacing)
+cm3xtk = 10
+*
+* Junction capacitances
+*
+cdnpwell = 350   (n+/psub)
+cdpnwell = 400  (p+/nwell)
+cnwell = 100    (nwell/psub)
+cpwell = 100    (pwell/nsub)
+cldn = 300      (Lineic capacitance N+/P- aF/æm)
+cldp = 300      (Idem for P+/N-)
+*
+* Nmos Model 3 parameters
+*
+NMOS
+l3vto = 0.8
+l3vmax = 130e3
+l3gamma = 0.7
+l3theta = 0.2
+l3kappa = 0.01
+l3phi = 0.7
+l3ld = 0.01
+l3u0 = 0.06
+l3tox = 15e-9
+l3nss = 0.07
+l3cgd = 1e-10
+*
+* Pmos Model 3
+*
+PMOS
+l3vto = -0.8
+l3vmax = 100e3
+l3gamma = 0.45
+l3theta = 0.2
+l3kappa = 0.04
+l3phi = 0.7
+l3ld = -0.05
+l3u0 = 0.02
+l3tox = 15e-9
+l3nss = 0.07
+l3cgd = 1e-10
+*
+* BSIM4 parameters
+* Nmos
+*
+NMOS
+b4vtho = 0.8
+b4k1 = 0.22
+b4k2 = 0.1
+b4xj = 1.7e-7
+b4toxe = 15e-9
+b4ndep = 1.8e17
+b4d0vt = 2.3
+b4d1vt = 0.54
+b4vfb = -0.9
+b4u0 = 0.058
+b4ua = 2.9e-15
+b4uc = -0.047e-15
+b4vsat = 80e3
+b4pscbe1 =320e6
+b4ute = -1.8
+b4kt1 = -0.06
+b4lint = 0.01e-6
+b4wint = 0.02e-6
+b4xj = 1.5e-7
+b4ndep = 1.7e17
+b4pclm = 1.1
+*
+* Pmos BSIM4
+*
+PMOS
+b4vtho = 0.8
+b4k1 = 0.2
+b4k2 = 0.1
+b4xj = 1.7e-7
+b4toxe = 15e-9
+b4ndep = 1.8e17
+b4d0vt = 2.3
+b4d1vt = 0.54
+b4vfb = -0.9
+b4nfact = 2.2
+b4u0 = 0.02
+b4ua = 3e-15
+b4uc = -0.047e-15
+b4vsat = 50e3
+b4pscbe1 =320e6
+b4ute = -1.8
+b4kt1 = -0.06
+b4lint = 0.01e-6
+b4nfact = 2.2
+b4wint = 0.02e-6
+b4xj = 1.5e-7
+b4ndep = 1.7e17
+b4pclm = 0.7
+*
+* MicroWind simulation parameters
+*
+deltaT = 3.0e-12   (Minimum simulation interval dT)
+vdd = 5.0
+temperature = 27
+riseTime = 0.1  (typical rise/fall time)
+*
+* CIF
+* MicroWind name, Cif name,overetch for final translation
+*
+cif nwell NTUB 0.0
+cif aarea AAREA 0.0
+cif poly POLY1  0.0
+cif diffn NPLUS  0.2
+cif diffp PPLUS  0.2
+cif contact CONT  0.0
+cif metal MET1  0.0
+cif via VIA 0.05
+cif metal2 MET2 0.0
+cif via2 VIA2  0.05
+cif metal3 MET3 0.0
+cif passiv PAD 0.0
+cif text 94 0.0
+*
+* End CMOS 0.6µm
+*

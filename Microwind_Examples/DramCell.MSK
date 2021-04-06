@@ -1,0 +1,86 @@
+VERSION 5/14/2003 11:09:09 AM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\DramCell.MSK
+BB(39,-32,88,8)
+SIMU #20.00
+REC(60,0,6,6,OP,8)
+REC(60,-19,6,6,OP,8)
+REC(44,-19,6,6,OP,8)
+REC(80,-27,6,6,OP,8)
+REC(80,-7,6,6,OP,8)
+REC(80,-8,6,7,DN)
+REC(80,-17,6,6,DN)
+REC(80,-27,6,7,DN)
+REC(60,-1,6,7,DN)
+REC(60,-9,6,5,DN)
+REC(60,-20,6,7,DN)
+REC(60,-28,6,5,DN)
+REC(44,-20,6,7,DN)
+REC(44,-28,6,5,DN)
+REC(82,-15,2,2,CO)
+REC(62,-27,2,2,CO)
+REC(62,-17,2,2,CO)
+REC(62,-27,2,2,CO)
+REC(82,-15,2,2,CO)
+REC(82,-15,2,2,CO)
+REC(46,-27,2,2,CO)
+REC(62,-8,2,2,CO)
+REC(46,-17,2,2,CO)
+REC(46,-27,2,2,CO)
+REC(82,-5,2,2,CO)
+REC(82,-15,2,2,CO)
+REC(82,-25,2,2,CO)
+REC(62,2,2,2,CO)
+REC(62,-8,2,2,CO)
+REC(58,-4,10,3,PO)
+REC(42,-23,10,3,PO)
+REC(78,-20,10,3,PO)
+REC(58,-23,10,3,PO)
+REC(78,-11,10,3,PO)
+REC(81,-16,4,4,ME)
+REC(58,1,10,4,ME)
+REC(61,-9,4,4,ME)
+REC(78,-6,10,4,ME)
+REC(78,-26,10,4,ME)
+REC(45,-28,4,4,ME)
+REC(58,-18,10,4,ME)
+REC(61,-28,4,4,ME)
+REC(42,-18,10,4,ME)
+REC(46,-27,2,2,VI)
+REC(62,-8,2,2,VI)
+REC(62,-27,2,2,VI)
+REC(82,-15,2,2,VI)
+REC(61,-28,4,36,M2)
+REC(45,-28,4,17,M2)
+REC(81,-29,4,30,M2)
+REC(44,-23,6,3,DN)
+REC(60,-23,6,3,DN)
+REC(60,-4,6,3,DN)
+REC(80,-20,6,3,DN)
+REC(80,-11,6,3,DN)
+TITLE 45 -31  #1 bit
+$- 1000 0 
+TITLE 61 -30  #2 bits
+$- 1000 0 
+TITLE 80 -32  #2 bits with shared bit line contact
+$- 1000 0 
+TITLE 40 1  #memory cell
+$- 1000 0 
+TITLE 46 -10  #BL
+$- 1000 0 
+TITLE 39 -16  #Vss
+$- 1000 0 
+TITLE 40 -21  #WL
+$- 1000 0 
+TITLE 75 -5  #Vss
+$- 1000 0 
+TITLE 75 -10  #WL[1]
+$- 1000 0 
+TITLE 75 -24  #Vss
+$- 1000 0 
+TITLE 75 -19  #WL[0]
+$- 1000 0 
+TITLE 83 3  #BL
+$- 1000 0 
+TITLE 40 5  #embedded DRAM 
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\DramCell.MSK

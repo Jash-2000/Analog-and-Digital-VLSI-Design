@@ -1,0 +1,63 @@
+VERSION 3/28/2003 3:57:15 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\cmosLoad.MSK
+BB(7,25,73,72)
+SIMU #10.00
+REC(39,36,32,28,NW)
+REC(54,42,7,16,DP)
+REC(45,42,7,16,DP)
+REC(9,64,6,6,DP)
+REC(61,42,6,6,DN)
+REC(18,43,7,10,DN)
+REC(9,43,7,10,DN)
+REC(47,54,2,2,CO)
+REC(57,54,2,2,CO)
+REC(21,45,2,2,CO)
+REC(57,44,2,2,CO)
+REC(11,45,2,2,CO)
+REC(57,49,2,2,CO)
+REC(11,66,2,2,CO)
+REC(28,61,2,2,CO)
+REC(63,44,2,2,CO)
+REC(47,44,2,2,CO)
+REC(16,59,38,3,PO)
+REC(16,41,2,14,PO)
+REC(26,62,6,3,PO)
+REC(52,40,2,19,PO)
+REC(16,55,3,4,PO)
+REC(25,59,7,7,ME)
+REC(61,42,6,6,ME)
+REC(19,50,6,3,ME)
+REC(45,49,6,9,ME)
+REC(44,42,7,7,ME)
+REC(19,43,7,7,ME)
+REC(55,32,6,38,ME)
+REC(9,32,6,39,ME)
+REC(46,44,3,3,VI)
+REC(27,61,3,3,VI)
+REC(21,45,3,3,VI)
+REC(25,63,7,3,M2)
+REC(7,44,66,4,M2)
+REC(27,32,4,12,M2)
+REC(7,59,66,4,M2)
+REC(44,48,7,3,M2)
+REC(19,48,7,3,M2)
+REC(44,42,7,2,M2)
+REC(19,43,7,1,M2)
+REC(52,42,2,16,DP)
+REC(16,43,2,10,DN)
+RLCC 29 33 34 33 1 #0.01
+TITLE 59 68  #Vdd
+$1 1000 0 
+TITLE 12 40  #Vss
+$0 1000 0 
+TITLE 72 47  #Vout
+$v 1000 0 
+TITLE 8 61  #clock1
+$c 1000 0   0.45   0.50   0.95   1.00 
+TITLE 23 25  #A typical load of 10fF is added to the output
+$- 1000 0 
+TITLE 18 70  #1GHz input
+$- 1000 0 
+TITLE 38 72  #BSIM4 used for accurate simulation
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\cmosLoad.MSK

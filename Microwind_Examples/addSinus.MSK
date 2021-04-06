@@ -1,0 +1,40 @@
+VERSION 2/23/2003 8:44:54 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\addSinus.MSK
+BB(11,-2,93,36)
+SIMU #50.00
+REC(16,2,57,30,OP,16)
+REC(20,25,2,2,CO)
+REC(68,6,2,2,CO)
+REC(44,6,2,2,CO)
+REC(44,6,2,2,CO)
+REC(44,15,2,2,CO)
+REC(44,25,2,2,CO)
+REC(20,15,2,2,CO)
+REC(20,15,2,2,CO)
+REC(19,14,10,4,PO)
+REC(19,24,10,4,PO)
+REC(43,5,10,4,PO)
+REC(58,5,13,4,PO)
+REC(34,14,13,4,PO)
+REC(34,24,13,4,PO)
+REC(43,5,4,23,ME)
+REC(11,24,12,4,ME)
+REC(67,-2,4,11,ME)
+REC(11,14,12,4,ME)
+REC(29,14,5,4,PO)
+REC(53,5,5,4,PO)
+REC(29,24,5,4,PO)
+RLCR 29 25 34 25 1 #R(poly)=280
+RLCR 29 15 34 15 1 #R(poly)=280
+RLCR 53 6 58 6 1 #R(poly)=490
+TITLE 14 16  #sinus1
+$s 500 250 1000.00   0.00   0.00   0.00 
+TITLE 12 26  #sinus2
+$s 500 250 100.00   0.00   0.00   0.00 
+TITLE 69 -1  #Vss
+$0 1000 0 
+TITLE 44 11  #s1+s2
+$v 1000 0 
+TITLE 23 36  #Adding two sinusoidal waves
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\addSinus.MSK
